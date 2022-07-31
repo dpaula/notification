@@ -12,4 +12,15 @@ public class NotificationApplication {
         SpringApplication.run(NotificationApplication.class, args);
     }
 
+//    @Bean
+//    CommandLineRunner commandLineRunner(RabbitMQMessageProducer producer,
+//                                         RabbitMQConfigProperties config) {
+//        return args -> {
+//            System.out.println("Hello World!");
+//            producer.publish(new Person("Fernando", 36), config.getInternalExchange(), config.getInternalNotificationRoutingKey());
+//        };
+//    }
+//
+//    record Person(String name, int age){}
+
 }
